@@ -15,7 +15,6 @@ pipeline {
     environment {
         EC2_SERVICE="http://ec2_manager:5000/instances"
         EC2=start_ec2().trim()
-        SLAVE_LABEL = "slave-${suiteRunId}"
     }
     stages {
         stage('Running tests') {
