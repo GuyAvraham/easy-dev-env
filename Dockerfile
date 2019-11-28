@@ -8,4 +8,8 @@ COPY react-firestore-authentication/package-lock.json react-firestore-authentica
 
 WORKDIR pretty-landing-page
 RUN yarn
+
+COPY pretty-landing-page /app/pretty-landing-page
+COPY react-firestore-authentication /app/react-firestore-authentication
+
 CMD yarn start
