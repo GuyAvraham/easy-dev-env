@@ -5,5 +5,6 @@ You can start with pretty-landing-page
 - yarn
 - yarn start
 
+
 Or start with docker-compose:
 - docker-compose up -d
