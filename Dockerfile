@@ -1,4 +1,4 @@
-FROM node
+FROM node:8.15.1
 WORKDIR /app
 COPY pretty-landing-page/package.json pretty-landing-page/package.json
 COPY pretty-landing-page/yarn.lock pretty-landing-page/yarn.lock 
