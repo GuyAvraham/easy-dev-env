@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
+import './utils/featureFlags'
 import "aos/dist/aos.css";
 import "./assets/styles/main.scss";
 

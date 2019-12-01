@@ -14,6 +14,7 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
     "react-scroll": "^1.7.11",
+    "rox-browser": "^4.8.5",
     "scrollmagic": "^2.0.6",
     "styled-components": "^4.2.0"
   },
