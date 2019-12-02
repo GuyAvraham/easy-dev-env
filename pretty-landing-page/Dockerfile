@@ -3,4 +3,5 @@ WORKDIR /app
 COPY package.json package.json
 RUN yarn
 
-COPY . /app/.
+COPY . .
+RUN yarn start
