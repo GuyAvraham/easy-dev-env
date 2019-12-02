@@ -1,7 +1,14 @@
 version: '3.7'
 services:
-  app:
-    build: .
+  landing_page:
+    build:
+      context: pretty-landing-page
     restart: on-failure
     ports:
       - 3000:3000
+
+  express_it:
+    build:
+      context: express-it
+    ports:
+      - 3001:3001
