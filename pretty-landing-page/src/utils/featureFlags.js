@@ -1,8 +1,8 @@
 import Rox from 'rox-browser';
 
-const flags = {
+export const flags = {
     enableTutorial: new Rox.Flag(false),
-    titleColors: new Rox.Variant('White', ['White', 'Blue', 'Green', 'Yellow']),
+    titleColors: new Rox.Variant('White', ['White', 'Blue']),
 };
 
 // Register the flags with Rollout

@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import Arrow from "./Icons/Arrow";
 import bgImg from "../assets/img/bg-home.jpg";
+import { flags } from '../utils/featureFlags';
 
 const Section = styled.section`
   position: relative;
@@ -53,7 +54,7 @@ const Section = styled.section`
 `;
 
 const BgOverlay = styled.div`
-  background: linear-gradient(33deg, #8400ff, #413bff);
+  background: linear-gradient(33deg, ${props => props.color}, #413bff);
   opacity: 0.9;
   position: absolute;
   height: 100%;
@@ -64,7 +65,7 @@ const BgOverlay = styled.div`
   top: 0;
 
   @media (min-width: 992px) {
-    background-image: linear-gradient(62deg, #8400ff, #413bff);
+    background-image: linear-gradient(62deg, ${props => props.color}, #413bff);
   }
 `;
 
@@ -110,10 +111,18 @@ const Box = styled.div`
   position: relative;
 `;
 
+const colors = {
+  White: '#ffffff',
+  Blue: '#8400ff',
+  Green: '#31e03f',
+  Yellow: '#f3ff3b',
+};
+
 const Home = () => {
+  const color = flags.titleColors.getValue();
   return (
     <Section id="home">
-      <BgOverlay />
+      <BgOverlay color={colors[color]} />
       <div className="container">
         <HomeTitle data-aos="zoom-in">
           It is a long established fact that a reader will be distracted by the
