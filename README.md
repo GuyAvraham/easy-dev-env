@@ -5,6 +5,11 @@ You can start with pretty-landing-page
 - yarn
 - yarn start
 
+Start Express app
+- cd ./express-it
+- yarn
+- yarn start
+
 Or start with docker-compose:
 - docker-compose up -d
 
