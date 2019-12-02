@@ -4,6 +4,7 @@ services:
     build:
       context: pretty-landing-page
     restart: on-failure
+    command: yarn start --SKIP_PREFLIGHT_CHECK=true
     ports:
       - 3000:3000
 
