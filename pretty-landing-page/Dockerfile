@@ -4,4 +4,4 @@ COPY package.json package.json
 RUN yarn
 
 COPY . .
-RUN yarn start
+CMD yarn start
